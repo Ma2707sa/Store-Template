@@ -1,0 +1,335 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(45deg, #ff3d00, #ffeb3b, #4caf50, #2196f3);
+  color: #fff;
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: 400% 400%;
+}
+
+@keyframes gradientBackground {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.logo {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin: 20px 0;
+  background-color: #fff;
+  object-fit: cover;
+}
+
+header h1 {
+  font-size: 1.8em;
+  margin: 10px 0;
+  word-wrap: break-word;
+}
+
+header p {
+  margin: 5px 0;
+  font-size: 1em;
+  word-wrap: break-word;
+}
+
+.links {
+  margin-top: 20px;
+  /* display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;  
+  padding: 20px; */
+}
+
+.link {
+  display: block;
+  text-decoration: none;
+  background-color: #fff;
+  color: #fb8c00;
+  margin: 10px auto;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-size: 1em;
+  font-weight: bold;
+  max-width: 100%; /* Full width for smaller screens */
+  transition: background 0.3s, color 0.3s;
+  box-sizing: border-box;
+  text-align: center;
+  word-wrap: break-word;
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+
+}
+.link i {
+  margin-right: 10px;
+}
+
+.link:hover {
+  color: #fff;
+}
+
+footer {
+  margin-top: 20px;
+  font-size: 17px;
+  font-weight: bold;
+  font-style: italic;
+  color: #000;
+  font-family: "Courier New", Courier, monospace;
+}
+
+@media (max-width: 768px) {
+  .logo {
+    width: 80px;
+    height: 80px;
+  }
+  header h1 {
+    font-size: 1.5em;
+  }
+  header p {
+    font-size: 0.9em;
+  }
+  .link {
+    font-size: 0.9em;
+    padding: 8px 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo {
+    width: 60px;
+    height: 60px;
+  }
+  header h1 {
+    font-size: 1.2em;
+  }
+  header p {
+    font-size: 0.8em;
+  }
+  .link {
+    font-size: 0.8em;
+    padding: 6px 10px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .logo {
+    width: 150px;
+    height: 150px;
+  }
+  header h1 {
+    font-size: 2.5em;
+  }
+  header p {
+    font-size: 1.3em;
+  }
+  .link {
+    font-size: 1.2em;
+    padding: 12px 18px;
+    max-width: 500px;
+  }
+}
+.links a.facebook i {
+  color: #1877f2;
+}
+
+.links a.youtube i {
+  color: #ff0000;
+}
+
+.links a.whatsapp i {
+  color: #25d366;
+}
+
+.links a.twitter i {
+  color: #1da1f2;
+}
+
+.links a.instagram i {
+  color: #e1306c;
+}
+
+.links a.tiktok i {
+  color: #e1306c;
+}
+
+.links a:hover i {
+  opacity: 0.8;
+}
+
+/* Basic link design */
+.links a {
+  display: inline-flex;
+  align-items: center;
+  margin: 10px;
+  font-size: 18px;
+  text-decoration: none;
+  color: #333; /* Main text color */
+  transition: color 0.3s ease, transform 0.3s ease;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Icon design */
+.links a i {
+  margin-right: 8px;
+  font-size: 24px;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+/* Facebook */
+.links a.facebook i {
+  color: #1877f2;
+}
+
+.links a.facebook:hover i {
+  color: #1877f2;
+}
+
+.links a.facebook:hover {
+  color: #1877f2;
+}
+
+/* YouTube */
+.links a.youtube i {
+  color: #ff0000;
+}
+
+.links a.youtube:hover i {
+  color: #ff0000;
+}
+
+.links a.youtube:hover {
+  color: #ff0000;
+}
+
+/* WhatsApp */
+.links a.whatsapp i {
+  color: #25d366;
+}
+
+.links a.whatsapp:hover i {
+  color: #25d366;
+}
+
+.links a.whatsapp:hover {
+  color: #25d366;
+}
+
+/* Twitter */
+.links a.telegram i {
+  color: #1da1f2;
+}
+
+.links a.telegram:hover i {
+  color: #1da1f2;
+}
+
+.links a.telegram:hover {
+  color: #1da1f2;
+}
+
+/* tiktok */
+
+.links a.tiktok i {
+  color: #000;
+}
+
+.links a.tiktok:hover i {
+  color: #000;
+}
+
+.links a.tiktok:hover {
+  color: #000;
+}
+
+.links a.facebook-group i {
+  color: #1da1f2;
+}
+
+.links a.facebook-group:hover i {
+  color: #1da1f2;
+}
+
+.links a.facebook-group:hover {
+  color: #1da1f2;
+}
+
+/* Instagram */
+.links a.instagram i {
+  color: #e1306c;
+}
+
+.links a.instagram:hover i {
+  color: #e1306c;
+}
+
+.links a.instagram:hover {
+  color: #e1306c;
+}
+
+/* Hover effect */
+.links a:hover {
+  transform: scale(1.1);
+}
+
+.marquee {
+  width: 100%;
+  overflow: hidden;
+  /* background-color: #333; */
+  padding: 20px 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.marquee h1 {
+  display: inline-block;
+  white-space: nowrap;
+  font-size: 24px;
+  color: black;
+  margin: 0;
+  animation: moveText 7s linear infinite;
+  transform: translateX(100%);
+  font-weight: bold;
+  font-style: italic;
+}
+
+@keyframes moveText {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+#store-logo {
+  width: 150px; /* تحديد عرض الصورة (يمكنك تغييره حسب الحاجة) */
+  height: auto; /* الحفاظ على النسب الأصلية للصورة */
+  transition: transform 0.3s ease; /* تأثير التحول يكون ناعماً ويستغرق 0.3 ثانية */
+}
+
+#store-logo:hover {
+  transform: scale(1.2); /* تكبير الصورة بنسبة 20% عند تمرير الماوس */
+}
